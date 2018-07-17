@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+a{
+    font-family: 'Anton';
+}
+
+p{
+    font-family: 'Dosis';
+}
+
+#promo{
+    display: none;
+}
+
+#xa{
+    display: none;
+}
+
+#icones1{
+    display: none;
+}
+
+#icones2{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#aba{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(250, 243, 155);
+}
+
+#logo{
+    align-self: flex-start;
+}
+
+#navegador{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh; 
+    margin-left: 2vh;
+    width: 160vh;
+}
+
+header div nav a{
+    font-size: 14pt;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(239, 111, 43);
+}
+
+#capa img{
+    width: 100%;
+    max-height: 600px;
+    margin-bottom: 0;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    background-image: url(images/textura4.jpg);
+    height: 130vh;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -5px;
+}
+
+section img{
+    border: 2px solid black;
+}
+
+section div-second-child{
+    height: 120vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#produto{
+    width: 25vh;
+    height: 20vh;
+}
+.loja img{
+    width: 23vh;
+    height: 15vh;
+}
+
+#produto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section p{
+    font-weight: bold;
+    color: black;
+    font-size: 14pt;
+}
+
+#div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 450px){
+    header div nav a{
+        font-size: 12pt;
+    }
+    footer div a{
+        font-size: 12pt;
+    }
+}
+
+@media(max-width: 420px){
+    header div nav a{
+        font-size: 9pt;
+    }
+}
+
+
+footer{
+    border-top: 2px solid black;
+    background-image: url(Images/textura3.jpg);
+    background-size: 100%;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+#info a{
+    font-weight: bold;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12pt;
+    color: black;
+}
+
+
+@media(min-width: 1000px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -5px;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        height: 200vh;
+        background-size: 100%;
+    }
+    #promo{
+        display: block;
+        width: 80%;
+    }
+    #produtos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    section div p{
+        display: none;
+    }
+    #xa{
+        display: block;
+    }
+    #loj{
+        display: block;
+    }
+    #produto{
+        height: 30vh;
+        width: 40vh;
+    }
+    .loja img{
+        width: 22vh;
+        height: 27vh;
+    }
+    #info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    header div nav a{
+        font-size: 20pt;
+    }
+    #interesse p{
+        font-size: 30pt;
+    }
+    section p{
+        font-size: 25pt;
+    }
+    #info a{
+        font-size: 20pt;
+    }
+}
+
+@media(min-width: 1180px){
+    .loja img{
+        width: 28vh;
+        height: 30vh;
+    }
+}
+
+
+#pug{
+    
+    width: 10px;
+    height: 10px;
+    animation-duration: 30s;
+    animation-name: pugpassear;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    }
+
+@keyframes pugpassear{
+    from{
+        margin-left: 100%;
+        /* width: 10% */
+    }
+    to{
+        margin-right: 0%;
+        /* width: 100%; */
+
+    }
+}
+    
+#interesse{
+    background-image: url(Images/textura3.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.interesse img{
+    width: 80%;
+    max-height: 600px;
+    max-width: 600px;;
+    height: 30%;
+    border: 3px solid black;
+    margin: 20px;
+    margin-left: -50px;
+    border-width: 4px;
+}
+
+.interesse p{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 13pt;
+    margin-left: -26px;
+}
+
+.button {
+    margin-top: 20px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+	background-color:#fe1a00;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0px;
+	border:3px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:71px;
+	line-height:71px;
+	width:138px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #b23e35;
+}
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+	background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+	background-color:#ce0100;
+}.button:active {
+	position:relative;
+	top:1px;
+}
